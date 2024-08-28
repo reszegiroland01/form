@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    
+}
+
+.users{
+    width: 50%;
+}
+
+.userList{
+    width: 50%;
+}

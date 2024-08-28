@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin oldal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="users">
+            <h2>Regisztrált felhasználók</h2>
+            <div id="userList"></div>
+        </div>
+        <div class="userList">
+            <h2>Regisztrált felhasználók szűrése</h2>
+            <div class="filter-section">
+                <label for="genderFilter">Nem:</label>
+                <select id="genderFilter" onchange="applyFilters()">
+                    <option value="all">Összes</option>
+                    <option value="férfi">Férfi</option>
+                    <option value="nő">Nő</option>
+                </select>
+        
+                <label for="ageFilter">Kor:</label>
+                <select id="ageFilter" onchange="applyFilters()">
+                    <option value="all">Összes</option>
+                    <option value="under18">18 év alatt</option>
+                    <option value="over70">70 év felett</option>
+                </select>
+        
+                <label for="emailFilter">Email:</label>
+                <select id="emailFilter" onchange="applyFilters()">
+                    <option value="all">Összes</option>
+                    <option value="gmail">Gmail</option>
+                </select>
+            </div>
+        
+            <div id="userList"></div>
+        </div>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
